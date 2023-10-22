@@ -1,0 +1,48 @@
+.tweet {
+
+    grid-row: auto;
+    height: auto;
+    grid-column: auto;
+    background-color: #32304d;
+    border-radius: 15px;
+    box-shadow: rgba(255, 255, 255, 0.041) 0px 8px 24px;
+    margin: 10px;
+    width: auto;
+
+
+}   
+
+.tweet:nth-of-type(3n) {
+    grid-column: 1/3;
+}
+
+.tweet .header {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+    gap: 10px;
+    padding: 20px;
+}
+.tweet img{
+    height: 70px;
+    padding: 10px;
+}
+.tweet .text {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.identifiant {
+    color: rgba(255, 255, 255, 0.212);
+}
+
+@media (max-width:715px) {
+    .tweet:nth-of-type(3n) {
+        grid-column: 1;
+}
+    
+}
